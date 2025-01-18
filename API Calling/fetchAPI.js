@@ -19,10 +19,10 @@ async function fetchData() {
         const response = await fetch("url");
         const data = await response.json();
         // code
+        }catch (error) {
+            console.error("Error:", error.message);
         }
-    } catch (error) {
-        console.error("Error:", error.message);
-    }
-}
+    } 
 
-fetchData();
+
+export {fetchData};
